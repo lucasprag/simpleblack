@@ -1,6 +1,6 @@
 # Simple Black
 
-A plain and simple black colorschema for vim.
+**WIP** - A plain and simple black colorschema for vim.
 
 Used on neovim on iTerm. If you find any problem please consider making a PR.
 
