@@ -124,3 +124,8 @@ hi link javaScriptNumber      Number
 " Python
 hi  link pythonEscape         Keyword
 
+" support for GitGutter (https://github.com/airblade/vim-gitgutter)
+highlight GitGutterAdd    guifg=#009900
+highlight GitGutterChange guifg=#bbbb00
+highlight GitGutterDelete guifg=#ff2222
+
