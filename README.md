@@ -1,8 +1,6 @@
 # Simple Black
 
-**WIP** - A plain and simple black colorschema for vim.
-
-Used on neovim on iTerm. If you find any problem please consider making a PR.
+![simpleblack](github/simpleblack.png)
 
 ## Install
 
