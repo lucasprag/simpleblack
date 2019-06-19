@@ -25,7 +25,7 @@ fun! <sid>hi(group, fg, bg, attr)
 endfun
 
 " ==========================
-" Color Variables #CF73E6
+" Color Variables
 " ==========================
 let s:simpleBlack = {'gui': '#000000', 'cterm256': 'black'}
 let s:simpleBlack2 = {'gui': '#121212', 'cterm256': '233'}
@@ -66,12 +66,12 @@ call <sid>hi('Folded', s:simpleGray3, s:none, 'none')
 call <sid>hi('IncSearch', s:simpleBlack, s:simpleBlue2, 'none')
 call <sid>hi('LineNr', s:simpleGray, s:simpleBlack, 'none')
 
-call <sid>hi('MatchParen', s:simpleBlack, s:simpleGold, 'none')
+call <sid>hi('MatchParen', s:simpleWhite, s:simpleBlue2, 'none')
 call <sid>hi('Normal', s:simpleWhite, s:simpleBlack, 'none')
 call <sid>hi('Pmenu', s:none, s:none, 'none')
 call <sid>hi('PmenuSel', s:none, s:simpleGray2, 'none')
 call <sid>hi('Search', s:simpleBlack, s:simpleBlue2, 'none')
-call <sid>hi('StatusLine', s:simpleBlack, s:simpleBlack, 'none')
+call <sid>hi('StatusLine', s:simpleBlue2, s:simpleBlack, 'none')
 "call <sid>hi('StatusLineNC', s:simpleBlack, s:simpleBlack, 'none')
 call <sid>hi('VertSplit', s:simpleBlack2, s:simpleBlack, 'none')
 call <sid>hi('Visual', s:none, s:simpleGray2, 'none')

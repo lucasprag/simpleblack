@@ -24,4 +24,8 @@ Change your `.vimrc`
 colorscheme simpledark
 ```
 
+## Inspiration
+- [irblack](https://github.com/wesgibbs/vim-irblack)
+- [SpaceCamp](https://github.com/jaredgorski/SpaceCamp)
+
 Thanks
