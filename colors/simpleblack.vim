@@ -76,6 +76,10 @@ call <sid>hi('StatusLine', s:simpleBlue2, s:simpleBlack, 'none')
 call <sid>hi('VertSplit', s:simpleBlack2, s:simpleBlack, 'none')
 call <sid>hi('Visual', s:none, s:simpleGray2, 'none')
 
+call <sid>hi('TabLine', s:simpleGray4, s:simpleBlack, 'none')
+call <sid>hi('TabLineFill', s:none, s:simpleBlack, 'none')
+call <sid>hi('TabLineSel', s:simpleBlue, s:simpleBlack, 'none')
+
 " General
 call <sid>hi('Boolean', s:simpleGoo, s:none, 'none')
 call <sid>hi('Character', s:simpleGoo, s:none, 'none')
