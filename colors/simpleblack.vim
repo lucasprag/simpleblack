@@ -7,7 +7,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name="simpleblank"
+let g:colors_name="simpleblack"
 
 " ==========================
 " Highlighting Function

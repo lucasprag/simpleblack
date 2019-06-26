@@ -21,7 +21,7 @@ Plugin 'lucasprag/simpleblack'
 Change your `.vimrc`
 
 ```
-colorscheme simpledark
+colorscheme simpleblack
 ```
 
 ## Inspiration
