@@ -27,6 +27,8 @@ endfun
 " ==========================
 " Color Variables
 " ==========================
+" Examples: colors: https://jonasjacek.github.io/colors/
+
 let s:simpleBlack = {'gui': '#000000', 'cterm256': 'black'}
 let s:simpleBlack2 = {'gui': '#121212', 'cterm256': '233'}
 
@@ -37,15 +39,16 @@ let s:simpleGray4 = {'gui': '#626262', 'cterm256': '241'}
 
 let s:simpleSteel = {'gui': '#DEDEDE', 'cterm256': '253'}
 let s:simpleWhite = {'gui': '#F8F8F8', 'cterm256': '231'}
-let s:simpleViolet = {'gui': '#CF73E6', 'cterm256': '170'}
+let s:simpleIndianRed = {'gui': '#ff5f87', 'cterm256': '204'}
 
+let s:simpleLightBlue = {'gui': '#afd7ff', 'cterm256': '153'}
 let s:simpleBlue = {'gui': '#5f87af', 'cterm256': '67'}
 let s:simpleBlue2 = {'gui': '#91AADF', 'cterm256': '110'}
 
 let s:simpleGreen = {'gui': '#57BA37', 'cterm256': '71'}
 let s:simpleGoo = {'gui': '#D8FA3B', 'cterm256': '191'}
 let s:simpleGold = {'gui': '#F0D50C', 'cterm256': '220'}
-let s:simpleOrange = {'gui': '#F66100', 'cterm256': '202'}
+let s:simpleOrange = {'gui': '#ff8700', 'cterm256': '208'}
 let s:simpleRed = {'gui': '#821A1A', 'cterm256': '1'}
 let s:simpleRed2 = {'gui': '#FF0000', 'cterm256': '196'}
 let s:none = {'gui': 'NONE', 'cterm256': 'NONE'}
@@ -63,14 +66,14 @@ call <sid>hi('CursorLine', s:none, s:simpleGray, 'none')
 call <sid>hi('CursorLineNr', s:simpleSteel, s:simpleGray, 'none')
 call <sid>hi('Directory', s:simpleBlue, s:simpleBlack, 'none')
 call <sid>hi('Folded', s:simpleGray3, s:none, 'none')
-call <sid>hi('IncSearch', s:simpleBlack, s:simpleBlue2, 'none')
 call <sid>hi('LineNr', s:simpleGray, s:simpleBlack, 'none')
 call <sid>hi('SignColumn', s:simpleGray, s:simpleBlack, 'none')
 call <sid>hi('Normal', s:simpleSteel, s:simpleBlack, 'none')
 call <sid>hi('MatchParen', s:simpleWhite, s:simpleBlue2, 'none')
 call <sid>hi('Pmenu', s:none, s:none, 'none')
 call <sid>hi('PmenuSel', s:none, s:simpleGray2, 'none')
-call <sid>hi('Search', s:simpleBlack, s:simpleBlue2, 'none')
+call <sid>hi('Search', s:simpleBlack, s:simpleBlue, 'none')
+call <sid>hi('IncSearch', s:simpleBlack, s:simpleBlue, 'none')
 call <sid>hi('StatusLine', s:simpleBlue2, s:simpleBlack, 'none')
 "call <sid>hi('StatusLineNC', s:simpleBlack, s:simpleBlack, 'none')
 call <sid>hi('VertSplit', s:simpleBlack2, s:simpleBlack, 'none')
@@ -84,9 +87,9 @@ call <sid>hi('TabLineSel', s:simpleBlue, s:simpleBlack, 'none')
 call <sid>hi('Boolean', s:simpleGoo, s:none, 'none')
 call <sid>hi('Character', s:simpleGoo, s:none, 'none')
 call <sid>hi('Comment', s:simpleBlue, s:none, 'none')
-call <sid>hi('Conditional', s:simpleViolet, s:none, 'none')
+call <sid>hi('Conditional', s:simpleLightBlue, s:none, 'none')
 call <sid>hi('Constant', s:simpleOrange, s:none, 'none')
-call <sid>hi('Define', s:simpleViolet, s:none, 'none')
+call <sid>hi('Define', s:simpleLightBlue, s:none, 'none')
 call <sid>hi('DiffAdd', s:simpleBlack, s:simpleGreen, 'none')
 call <sid>hi('DiffChange', s:simpleBlack, s:simpleGold, 'none')
 call <sid>hi('DiffDelete', s:simpleWhite, s:simpleRed, 'none')
@@ -99,14 +102,14 @@ call <sid>hi('Keyword', s:simpleGold, s:none, 'none')
 call <sid>hi('Label', s:simpleGreen, s:none, 'none')
 call <sid>hi('NonText', s:simpleGray, s:simpleBlack, 'none')
 call <sid>hi('Number', s:simpleGoo, s:none, 'none')
-call <sid>hi('Operator', s:simpleViolet, s:none, 'none')
-call <sid>hi('PreProc', s:simpleViolet, s:none, 'none')
+call <sid>hi('Operator', s:simpleIndianRed, s:none, 'none')
+call <sid>hi('PreProc', s:simpleIndianRed, s:none, 'none')
 call <sid>hi('Special', s:simpleWhite, s:none, 'none')
 call <sid>hi('SpecialKey', s:simpleGray, s:simpleBlack, 'none')
 call <sid>hi('SpellBad', s:none, s:none, 'undercurl')
 call <sid>hi('SpellCap', s:none, s:none, 'undercurl')
 call <sid>hi('SpellLocal', s:none, s:none, 'undercurl')
-call <sid>hi('Statement', s:simpleViolet, s:none, 'none')
+call <sid>hi('Statement', s:simpleIndianRed, s:none, 'none')
 call <sid>hi('StorageClass', s:simpleGold, s:none, 'none')
 call <sid>hi('String', s:simpleGreen, s:none, 'none')
 call <sid>hi('Tag', s:simpleGold, s:none, 'none')
@@ -130,15 +133,15 @@ else
 endif
 
 " CSS
-call <sid>hi('cssAttr', s:simpleViolet, s:none, 'none')
-call <sid>hi('cssAttrRegion', s:simpleViolet, s:none, 'none')
+call <sid>hi('cssAttr', s:simpleIndianRed, s:none, 'none')
+call <sid>hi('cssAttrRegion', s:simpleIndianRed, s:none, 'none')
 call <sid>hi('cssBraces', s:simpleWhite, s:none, 'none')
 call <sid>hi('cssBrowserPrefix', s:simpleSteel, s:none, 'none')
 call <sid>hi('cssClassName', s:simpleBlue2, s:none, 'none')
 call <sid>hi('cssClassNameDot', s:simpleSteel, s:none, 'none')
 call <sid>hi('cssClassSelectorDot', s:simpleSteel, s:none, 'none')
 call <sid>hi('cssColor', s:simpleSteel, s:none, 'none')
-call <sid>hi('cssCommonAttr', s:simpleViolet, s:none, 'none')
+call <sid>hi('cssCommonAttr', s:simpleIndianRed, s:none, 'none')
 call <sid>hi('cssCustomProperty', s:simpleGray4, s:none, 'none')
 call <sid>hi('cssDefinition', s:simpleGray4, s:none, 'none')
 call <sid>hi('cssFunction', s:simpleSteel, s:none, 'none')
@@ -178,15 +181,15 @@ call <sid>hi('cssPseudoClassLang', s:simpleGold, s:none, 'none')
 call <sid>hi('cssSelectorOperator', s:simpleSteel, s:none, 'none')
 call <sid>hi('cssTagName', s:simpleBlue2, s:none, 'none')
 call <sid>hi('cssURL', s:simpleGold, s:none, 'none')
-call <sid>hi('cssUnitDecorators', s:simpleViolet, s:none, 'none')
-call <sid>hi('cssUnits', s:simpleViolet, s:none, 'none')
+call <sid>hi('cssUnitDecorators', s:simpleIndianRed, s:none, 'none')
+call <sid>hi('cssUnits', s:simpleIndianRed, s:none, 'none')
 call <sid>hi('cssValueLength', s:simpleBlue2, s:none, 'none')
 call <sid>hi('cssValueNumber', s:simpleBlue2, s:none, 'none')
 call <sid>hi('cssValueKeyword', s:simpleGreen, s:none, 'none')
 call <sid>hi('cssVendor', s:simpleSteel, s:none, 'none')
 
 " HTML
-call <sid>hi('htmlArg', s:simpleViolet, s:none, 'none')
+call <sid>hi('htmlArg', s:simpleIndianRed, s:none, 'none')
 call <sid>hi('htmlEndTag', s:simpleSteel, s:none, 'none')
 call <sid>hi('htmlSpecialChar', s:simpleGoo, s:none, 'none')
 call <sid>hi('htmlSpecialTagName', s:simpleBlue2, s:none, 'none')
@@ -228,15 +231,15 @@ call <sid>hi('javascriptDocParamName', s:simpleGray4, s:none, 'none')
 call <sid>hi('javascriptDocParamType', s:simpleGray4, s:none, 'none')
 call <sid>hi('javascriptDocTags', s:simpleGray4, s:none, 'none')
 call <sid>hi('javascriptEndColons', s:simpleWhite, s:none, 'none')
-call <sid>hi('javascriptExport', s:simpleViolet, s:none, 'none')
+call <sid>hi('javascriptExport', s:simpleIndianRed, s:none, 'none')
 call <sid>hi('javascriptHeadersMethod', s:simpleSteel, s:none, 'none')
 call <sid>hi('javascriptIdentifierName', s:simpleBlue2, s:none, 'none')
-call <sid>hi('javascriptImport', s:simpleViolet, s:none, 'none')
+call <sid>hi('javascriptImport', s:simpleIndianRed, s:none, 'none')
 call <sid>hi('javascriptLabel', s:simpleSteel, s:none, 'none')
-call <sid>hi('javascriptLogicSymbols', s:simpleViolet, s:none, 'none')
+call <sid>hi('javascriptLogicSymbols', s:simpleIndianRed, s:none, 'none')
 call <sid>hi('javascriptMathStaticMethod', s:simpleSteel, s:none, 'none')
 call <sid>hi('javascriptObjectLabel', s:simpleSteel, s:none, 'none')
-call <sid>hi('javascriptOperator', s:simpleViolet, s:none, 'none')
+call <sid>hi('javascriptOperator', s:simpleIndianRed, s:none, 'none')
 call <sid>hi('javascriptPropertyName', s:simpleSteel, s:none, 'none')
 call <sid>hi('javascriptStringMethod', s:simpleSteel, s:none, 'none')
 call <sid>hi('javascriptVariable', s:simpleWhite, s:none, 'none')
@@ -258,7 +261,7 @@ call <sid>hi('jsObjectBraces', s:simpleWhite, s:none, 'none')
 call <sid>hi('jsObjectKey', s:simpleSteel, s:none, 'none')
 call <sid>hi('jsObjectStringKey', s:simpleGreen, s:none, 'none')
 call <sid>hi('jsRegexpString', s:simpleGoo, s:none, 'none')
-call <sid>hi('jsReturn', s:simpleViolet, s:none, 'none')
+call <sid>hi('jsReturn', s:simpleIndianRed, s:none, 'none')
 call <sid>hi('jsSpecial', s:simpleGoo, s:none, 'none')
 call <sid>hi('jsSuper', s:simpleOrange, s:none, 'none')
 call <sid>hi('jsTemplateBraces', s:simpleSteel, s:none, 'none')
@@ -266,8 +269,11 @@ call <sid>hi('jsTemplateString', s:simpleGreen, s:none, 'none')
 call <sid>hi('jsThis', s:simpleBlue2, s:none, 'none')
 call <sid>hi('jsVariableDef', s:simpleWhite, s:none, 'none')
 
+" also linked to export and from, in the vim-js plugin
+highlight link jsImport rubyInclude
+
 " JSX
-call <sid>hi('jsxAttrib', s:simpleViolet, s:none, 'none')
+call <sid>hi('jsxAttrib', s:simpleIndianRed, s:none, 'none')
 call <sid>hi('jsxAttributeBraces', s:simpleWhite, s:none, 'none')
 call <sid>hi('jsxCloseString', s:simpleBlue2, s:none, 'none')
 call <sid>hi('jsxCloseTag', s:simpleSteel, s:none, 'none')
@@ -275,25 +281,30 @@ call <sid>hi('jsxString', s:simpleGreen, s:none, 'none')
 call <sid>hi('jsxTag', s:simpleSteel, s:none, 'none')
 call <sid>hi('jsxTagName', s:simpleBlue2, s:none, 'none')
 
+" TypeScript
+" WTH, this doesn't work
+highlight link typescriptSource jsImport
+
 " Ruby
 call <sid>hi('rubyBlockParameter', s:simpleBlue, s:none, 'none')
-call <sid>hi('rubyClass', s:simpleViolet, s:none, 'none')
-call <sid>hi('rubyClassVariable', s:simpleWhite, s:none, 'none')
+call <sid>hi('rubyClass', s:simpleIndianRed, s:none, 'none')
+call <sid>hi('rubyClassVariable', s:simpleSteel, s:none, 'none')
 call <sid>hi('rubyConstant', s:simpleOrange, s:none, 'none')
-call <sid>hi('rubyControl', s:simpleViolet, s:none, 'none')
+call <sid>hi('rubyControl', s:simpleIndianRed, s:none, 'none')
 call <sid>hi('rubyEscape', s:simpleGoo, s:none, 'none')
-call <sid>hi('rubyException', s:simpleViolet, s:none, 'none')
+call <sid>hi('rubyException', s:simpleIndianRed, s:none, 'none')
 call <sid>hi('rubyFunction', s:simpleBlue2, s:none, 'none')
 call <sid>hi('rubyGlobalVariable', s:simpleWhite, s:none, 'none')
-call <sid>hi('rubyInclude', s:simpleViolet, s:none, 'none')
+call <sid>hi('rubyInclude', s:simpleIndianRed, s:none, 'none')
 call <sid>hi('rubyInstanceVariable', s:simpleWhite, s:none, 'none')
 call <sid>hi('rubyInterpolationDelimiter', s:none, s:none, 'none')
-call <sid>hi('rubyOperator', s:simpleViolet, s:none, 'none')
+call <sid>hi('rubyOperator', s:simpleIndianRed, s:none, 'none')
 call <sid>hi('rubyPseudoVariable', s:simpleWhite, s:none, 'none')
 call <sid>hi('rubyRegexp', s:simpleGreen, s:none, 'none')
 call <sid>hi('rubyRegexpDelimiter', s:simpleGreen, s:none, 'none')
 call <sid>hi('rubyStringDelimiter', s:simpleGreen, s:none, 'none')
-call <sid>hi('rubySymbol', s:simpleGoo, s:none, 'none')
+call <sid>hi('rubySymbol', s:simpleGold, s:none, 'none')
+
 
 " Ruby (Embedded)
 call <sid>hi('erubyComment', s:simpleGray3, s:none, 'none')
@@ -307,8 +318,21 @@ call <sid>hi('rubyRailsMethod', s:simpleOrange, s:none, 'none')
 call <sid>hi('rubyRailsRenderMethod', s:simpleOrange, s:none, 'none')
 call <sid>hi('rubyRailsUserClass', s:simpleOrange, s:none, 'none')
 
+" Erlang
+
+hi! link erlangAtom rubySymbol
+hi! link erlangBIF rubyPredefinedIdentifier
+hi! link erlangFunction rubyPredefinedIdentifier
+hi! link erlangDirective Statement
+hi! link erlangNode Identifier
+
+" Elixir
+
+hi! link elixirAtom rubySymbol
+hi! link elixirModuleDeclaration rubyConstant
+
 " XML
-call <sid>hi('xmlAttrib', s:simpleViolet, s:none, 'none')
+call <sid>hi('xmlAttrib', s:simpleIndianRed, s:none, 'none')
 call <sid>hi('xmlEndTag', s:simpleSteel, s:none, 'none')
 call <sid>hi('xmlTag', s:simpleSteel, s:none, 'none')
 call <sid>hi('xmlTagName', s:simpleBlue2, s:none, 'none')
@@ -343,3 +367,4 @@ call <sid>hi('markdownFootnoteDefinition', s:simpleGold, s:simpleBlack, 'none')
 call <sid>hi('markdownUrl', s:simpleGreen, s:simpleBlack, 'underline')
 call <sid>hi('markdownLinkText', s:simpleGreen, s:simpleBlack, 'none')
 call <sid>hi('markdownEscape', s:simpleSteel, s:simpleBlack, 'none')
+
