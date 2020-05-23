@@ -67,7 +67,7 @@ call <sid>hi('CursorLineNr', s:simpleSteel, s:simpleGray, 'none')
 call <sid>hi('Directory', s:simpleBlue, s:simpleBlack, 'none')
 call <sid>hi('Folded', s:simpleGray3, s:none, 'none')
 call <sid>hi('LineNr', s:simpleGray, s:simpleBlack, 'none')
-call <sid>hi('SignColumn', s:simpleGray, s:simpleBlack, 'none')
+call <sid>hi('SignColumn', s:simpleBlue2, s:simpleBlack, 'none')
 call <sid>hi('Normal', s:simpleSteel, s:simpleBlack, 'none')
 call <sid>hi('MatchParen', s:simpleWhite, s:simpleBlue2, 'none')
 call <sid>hi('Pmenu', s:none, s:simpleBlack, 'none')
@@ -269,8 +269,8 @@ call <sid>hi('jsTemplateString', s:simpleGreen, s:none, 'none')
 call <sid>hi('jsThis', s:simpleBlue2, s:none, 'none')
 call <sid>hi('jsVariableDef', s:simpleWhite, s:none, 'none')
 
-" also linked to export and from, in the vim-js plugin
-highlight link jsImport rubyInclude
+" TypeScript
+call <sid>hi('typescriptImport', s:simpleIndianRed, s:none, 'none')
 
 " JSX
 call <sid>hi('jsxAttrib', s:simpleIndianRed, s:none, 'none')
@@ -280,10 +280,6 @@ call <sid>hi('jsxCloseTag', s:simpleSteel, s:none, 'none')
 call <sid>hi('jsxString', s:simpleGreen, s:none, 'none')
 call <sid>hi('jsxTag', s:simpleSteel, s:none, 'none')
 call <sid>hi('jsxTagName', s:simpleBlue2, s:none, 'none')
-
-" TypeScript
-" WTH, this doesn't work
-highlight link typescriptSource jsImport
 
 " Ruby
 call <sid>hi('rubyBlockParameter', s:simpleBlue, s:none, 'none')
@@ -304,7 +300,7 @@ call <sid>hi('rubyRegexp', s:simpleGreen, s:none, 'none')
 call <sid>hi('rubyRegexpDelimiter', s:simpleGreen, s:none, 'none')
 call <sid>hi('rubyStringDelimiter', s:simpleGreen, s:none, 'none')
 call <sid>hi('rubySymbol', s:simpleGold, s:none, 'none')
-
+call <sid>hi('rubyDefine', s:simpleLightBlue, s:none, 'none')
 
 " Ruby (Embedded)
 call <sid>hi('erubyComment', s:simpleGray3, s:none, 'none')
@@ -319,7 +315,6 @@ call <sid>hi('rubyRailsRenderMethod', s:simpleOrange, s:none, 'none')
 call <sid>hi('rubyRailsUserClass', s:simpleOrange, s:none, 'none')
 
 " Erlang
-
 hi! link erlangAtom rubySymbol
 hi! link erlangBIF rubyPredefinedIdentifier
 hi! link erlangFunction rubyPredefinedIdentifier
@@ -327,7 +322,6 @@ hi! link erlangDirective Statement
 hi! link erlangNode Identifier
 
 " Elixir
-
 hi! link elixirAtom rubySymbol
 hi! link elixirModuleDeclaration rubyConstant
 
@@ -344,10 +338,11 @@ call <sid>hi('yamlDocumentHeader', s:simpleGreen, s:none, 'none')
 call <sid>hi('yamlKey', s:simpleGold, s:none, 'none')
 
 " ALE
+call <sid>hi('error', s:simpleRed2, s:simpleBlack, 'none')
 call <sid>hi('ALEErrorSign', s:none, s:simpleBlack, 'none')
-call <sid>hi('ALEWarningSign', s:simpleGray2, s:simpleBlack, 'none')
+call <sid>hi('ALEWarningSign', s:simpleGray3, s:simpleBlack, 'none')
 
-" markdown
+" Markdown
 call <sid>hi('markdownBold', s:simpleGold, s:simpleBlack, 'bold')
 call <sid>hi('markdownH1', s:simpleGold, s:simpleBlack, 'bold')
 call <sid>hi('markdownH2', s:simpleGold, s:simpleBlack, 'bold')
@@ -367,4 +362,3 @@ call <sid>hi('markdownFootnoteDefinition', s:simpleGold, s:simpleBlack, 'none')
 call <sid>hi('markdownUrl', s:simpleGreen, s:simpleBlack, 'underline')
 call <sid>hi('markdownLinkText', s:simpleGreen, s:simpleBlack, 'none')
 call <sid>hi('markdownEscape', s:simpleSteel, s:simpleBlack, 'none')
-
