@@ -22,7 +22,7 @@ Plug 'lucasprag/simpleblack', { 'tag': 'v0.1.0' } " latest version
 
 ### Ruby
 
-Notice that you can distinguish between module, class and method ending by color.
+Notice that you can distinguish between module, class and method endings by color.
 
 ![simpleblack](github/ruby.png)
 
