@@ -1,4 +1,3 @@
-
 import { VimColors } from "vimcolors"
 
 class JavaScriptExample extends VimColors {
@@ -31,6 +30,7 @@ document.getElementById("demo").innerHTML = example.present();
 
 let changeMe = "42"
 const cantChangeMe = 42
+window.alert(changeMe)
 console.log(changeMe = cantChangeMe, changeMe)
 
 

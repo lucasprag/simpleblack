@@ -7,6 +7,7 @@ Color schemes define colors for syntax groups which are defined by Vim and synta
 Supported languages/syntaxes:
 - Ruby using [vim-ruby/vim-ruby](https://github.com/vim-ruby/vim-ruby)
 - JavaScript using [yuezk/vim-js](https://github.com/yuezk/vim-js)
+- TypeScript using [HerringtonDarkholme/yats.vim](https://github.com/HerringtonDarkholme/yats.vim)
 
 More on the way!
 
@@ -23,10 +24,10 @@ Plug 'lucasprag/simpleblack'
 You can also set a specific version if you want to not receive updates.
 
 ```
-Plug 'lucasprag/simpleblack', { 'tag': 'v0.2.0' } " latest version
+Plug 'lucasprag/simpleblack', { 'tag': 'v0.3.0' } " latest version
 ```
 
-## Features
+## Screenshots
 
 #### Ruby
 
@@ -37,6 +38,11 @@ Notice that you can distinguish between module, class and method endings by colo
 #### JavaScript
 
 ![simpleblack](github/javascript.png)
+
+#### TypeScript
+
+![simpleblack](github/typescript.png)
+
 
 ## Usage
 
