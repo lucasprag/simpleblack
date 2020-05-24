@@ -255,9 +255,9 @@ call <sid>hi('rubyFunction', s:simpleBlue2, s:none, 'none')
 call <sid>hi('rubyGlobalVariable', s:simpleWhite, s:none, 'none')
 call <sid>hi('rubyInclude', s:simpleIndianRed, s:none, 'none')
 call <sid>hi('rubyInstanceVariable', s:simpleWhite, s:none, 'none')
-call <sid>hi('rubyInterpolationDelimiter', s:none, s:none, 'none')
+call <sid>hi('rubyInterpolationDelimiter', s:simpleIndianRed, s:none, 'none')
 call <sid>hi('rubyOperator', s:simpleIndianRed, s:none, 'none')
-call <sid>hi('rubyPseudoVariable', s:simpleWhite, s:none, 'none')
+call <sid>hi('rubyPseudoVariable', s:simpleGoo, s:none, 'none')
 call <sid>hi('rubyRegexp', s:simpleGreen, s:none, 'none')
 call <sid>hi('rubyRegexpDelimiter', s:simpleGreen, s:none, 'none')
 call <sid>hi('rubyStringDelimiter', s:simpleGreen, s:none, 'none')
@@ -284,8 +284,12 @@ hi! link erlangDirective Statement
 hi! link erlangNode Identifier
 
 " Elixir
+" based on https://github.com/elixir-editors/vim-elixir
 hi! link elixirAtom rubySymbol
 hi! link elixirModuleDeclaration rubyConstant
+call <sid>hi('elixirStringDelimiter', s:simpleGreen, s:none, 'none')
+call <sid>hi('elixirDocStringDelimiter', s:simpleBlue, s:none, 'none')
+call <sid>hi('elixirVariable', s:simpleSteel, s:none, 'none')
 
 " XML
 call <sid>hi('xmlAttrib', s:simpleIndianRed, s:none, 'none')

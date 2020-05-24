@@ -35,5 +35,3 @@ module VimColors
     end
   end
 end
-
-

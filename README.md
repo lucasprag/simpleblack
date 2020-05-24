@@ -8,6 +8,7 @@ Supported languages/syntaxes:
 - Ruby using [vim-ruby/vim-ruby](https://github.com/vim-ruby/vim-ruby)
 - JavaScript using [yuezk/vim-js](https://github.com/yuezk/vim-js)
 - TypeScript using [HerringtonDarkholme/yats.vim](https://github.com/HerringtonDarkholme/yats.vim)
+- Elixir using [elixir-editors/vim-elixir](https://github.com/elixir-editors/vim-elixir)
 
 More on the way!
 
@@ -24,7 +25,7 @@ Plug 'lucasprag/simpleblack'
 You can also set a specific version if you want to not receive updates.
 
 ```
-Plug 'lucasprag/simpleblack', { 'tag': 'v0.3.0' } " latest version
+Plug 'lucasprag/simpleblack', { 'tag': 'v0.4.0' } " latest version
 ```
 
 ## Screenshots
@@ -33,16 +34,19 @@ Plug 'lucasprag/simpleblack', { 'tag': 'v0.3.0' } " latest version
 
 Notice that you can distinguish between module, class and method endings by color.
 
-![simpleblack](github/ruby.png)
+![ruby](github/ruby.png)
 
 #### JavaScript
 
-![simpleblack](github/javascript.png)
+![javascript](github/javascript.png)
 
 #### TypeScript
 
-![simpleblack](github/typescript.png)
+![typescript](github/typescript.png)
 
+#### Elixir
+
+![elixir](github/elixir.png)
 
 ## Usage
 
