@@ -2,7 +2,13 @@
 
 A black colorscheme for (neo)vim, real black background, #000000.
 
-Support only for Ruby and JavaScript so far. More on the way.
+Color schemes define colors for syntax groups which are defined by Vim and syntax highlighting plugins. This colorscheme should work even if you don't have the syntax highlighting plugins listed below.
+
+Supported languages/syntaxes:
+- Ruby using [vim-ruby/vim-ruby](https://github.com/vim-ruby/vim-ruby)
+- JavaScript using [yuezk/vim-js](https://github.com/yuezk/vim-js)
+
+More on the way!
 
 ![simpleblack](github/simpleblack.png)
 
